@@ -11,9 +11,9 @@
     "compile": "tsc",
     "dev": "npm.cmd run compile && npm.cmd run start",
     "fix": "gts fix",
-    "prepare": "npm.cmd run compile",
-    "pretest": "npm.cmd run compile",
-    "posttest": "npm.cmd run lint"
+    "prepare": "tsc",
+    "pretest": "tsc",
+    "posttest": "gts lint"
   },
   "author": "Alex Lee",
   "license": "SEE LICENSE IN LICENSE",
