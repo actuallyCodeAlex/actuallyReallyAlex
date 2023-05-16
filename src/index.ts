@@ -45,4 +45,4 @@ const _ = new router();
 
 app.use(_.routes());
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000)
