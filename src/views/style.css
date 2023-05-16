@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+body {
+    font: 17px/1.5 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    background: white;
+    margin: 0;
+    color: #33333d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    height: 100%;
+}
+
+#top {
+    height: 100%;
+}
+
+section:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+section {
+    min-height: 50%;
+}
+
+#heading {
+    -webkit-user-select: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    text-align: center;
+    width: 100%;
+}
+
+#logo {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}
+
+#tagline {
+    font-size: 16px;
+}
