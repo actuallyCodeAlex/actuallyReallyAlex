@@ -66,7 +66,22 @@
     <span>v0.1.0</span>
     <script>
       const changeDisplayMode = () => {
-        console.log("changeDisplayMode");
+        const lightSpan = document.getElementById('display-1');
+        const darkSpan = document.getElementById('display-2');
+        const body = document.body;
+
+        const isDarkMode = body.classList.contains('dark');
+
+        if (isDarkMode) {
+            body.classList.remove('dark');
+            lightSpan.classList.add('emphasis');
+            darkSpan.classList.remove('emphasis');
+            return;
+        }
+
+        body.classList.add('dark');
+        darkSpan.classList.add('emphasis');
+        lightSpan.classList.remove('emphasis');
       };
     </script>
   </body>
