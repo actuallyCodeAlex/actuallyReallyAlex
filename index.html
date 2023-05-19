@@ -5,6 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alex Lee</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
+      body {
+        font: 17px/1.5 "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial,
+          Verdana, sans-serif;
+        background: white;
+        margin: 0;
+        color: #33333d;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0;
+        height: 100%;
+      }
+
+      #top {
+        height: 100%;
+      }
+
+      section:not(:last-child) {
+        border-bottom: 1px solid #eee;
+      }
+
+      section {
+        min-height: 50%;
+      }
+
+      #heading {
+        -webkit-user-select: none;
+        position: absolute;
+        top: 50%;
+        margin-top: -150px;
+        text-align: center;
+        width: 100%;
+      }
+
+      #logo {
+        font-family: "Caveat", cursive;
+        font-size: 40px;
+      }
+
+      #tagline {
+        font-size: 16px;
+      }
+    </style>
   </head>
   <body>
     <button type="button" onclick="changeDisplayMode()">
@@ -18,6 +63,11 @@
       loop
       src="https://github.com/actuallyCodeAlex/file-hoster/blob/main/001.mp3?raw=true"
     ></audio>
+    <script>
+      const changeDisplayMode = () => {
+        console.log("changeDisplayMode");
+      };
+    </script>
   </body>
 </html>
 l
